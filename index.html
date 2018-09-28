@@ -1,0 +1,66 @@
+<!--
+
+/**
+ * Created by alejandrorioscalera
+ * On 17/09/18
+ *
+ * -- SOCIAL NETWORKS --
+ *
+ * GitHub: https://github.com/clonalejandro or @clonalejandro
+ * Website: https://clonalejandro.me/
+ * Twitter: https://twitter.com/clonalejandro11/ or @clonalejandro11
+ * Keybase: https://keybase.io/clonalejandro/
+ *
+ * -- LICENSE --
+ *
+ * All rights reserved for clonalejandro ©malextrap 2018 / 2019
+ */
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="author" content="clonalejandro">
+     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+     <title>Password Generator</title>
+     <link href="https://clonalejandro.github.io/cdn/clonaweb/malextrap.min.css" rel="stylesheet">
+     <style>
+         .title .headline {
+             font-size: 2.5em!important;
+         }
+     </style>
+ </head>
+ <body>
+ 
+ <div id="wrapper">
+     <header class="header">
+         <div class="head">
+             <div class="title">
+                 <h1 class="headline">Password Generator</h1>
+             </div>
+         </div>
+     </header>
+ 
+     <div class="container">
+        <form id="passForm" onsubmit="return false">
+            <div class="form-group">
+                <div>
+                    <label>Size: </label>
+                    <input name="size" type="number" value="8" min="8" max="32" />
+                </div>
+                <div>
+                    <span id="password" style="display: none"></span>
+                </div>
+                <br>
+                <button type="submit" class="btn first-gradient animated">Generate Password</button>
+            </div>
+       </form>
+     </div>
+ </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+ <script src="https://clonalejandro.github.io/cdn/clonaweb/malextrap.min.js"></script>
+ <script src="./app.js"></script>
+ </body>
+ </html>
