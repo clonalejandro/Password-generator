@@ -1,4 +1,4 @@
-# Password-generator
+# Password-generator 🔐
 A password generator in Javascript
 
 ### Guide 
