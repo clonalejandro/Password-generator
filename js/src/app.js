@@ -40,15 +40,3 @@ class Password {
         return this.password;
     }
 }
-
-
-/** EVENTS **/
-
-$("#passForm").addEventListener("submit", e => {
-    const size = $("input[name='size']").value;
-    const output = $("#password");
-    const password = new Password(size).generate();
-
-    output.setAttribute("style", "");//Displays
-    output.innerHTML = password;//Display password
-})
