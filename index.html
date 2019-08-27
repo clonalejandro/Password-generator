@@ -62,5 +62,17 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
  <script src="https://clonalejandro.github.io/cdn/clonaweb/malextrap.min.js"></script>
  <script src="./js/src/app.js"></script>
+ <script>
+  /** EVENTS **/
+
+$("#passForm").addEventListener("submit", e => {
+    const size = $("input[name='size']").value;
+    const output = $("#password");
+    const password = new Password(size).generate();
+
+    output.setAttribute("style", "");//Displays
+    output.innerHTML = password;//Display password
+})
+  </script>
  </body>
  </html>
